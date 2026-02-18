@@ -1,4 +1,4 @@
-import { searchService } from "../services/searchService.js";
+import { searchService } from "../services/searchService.js"; 
 
 export const searchProduct = async (req, res, next) => {
   try {
