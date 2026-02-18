@@ -1,20 +1,8 @@
-import express from 'express';
-const router = express.Router();
+import { Router } from "express";
+import { searchProduct } from "../controllers/search.controller.js";
 
+const router = Router();
 
-router.get('/', (req, res) => {
-    res.json({
-        mensaje: "Ruta de búsqueda funcionando correctamente"
-    });
-});
-
-
-router.get('/buscar', (req, res) => {
-    const query = req.query.q;
-    res.json({
-        resultado: `Buscando resultados para: ${query}`
-    });
-});
-
+router.get("/", searchProduct);
 
 export default router;
