@@ -1,5 +1,5 @@
 import { Router } from "express";
-import searchRoutes from "./search.routes.js";
+import searchRoutes from "./searchRoutes.js";
 
 const router = Router();
 
